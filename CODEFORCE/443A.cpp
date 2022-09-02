@@ -1,25 +1,25 @@
-#include<iostream>
-#include<algorithm>
+/***  Problem Link ::: https://codeforces.com/problemset/problem/443/A  ***/
+
+#include <iostream>
 using namespace std;
 int main()
 {
- string s;
- cin>>s;
- int count=0;
- sort(s.begin(),s.end());
- for(int i=0;i<s.length()-1;i++)
-   {
-    if(s[i]>=92 && s[i]<=122)
-       {
-        count++;
-        if(s[i]==s[i+1])
-          count--;
-       }  
-    
-   }
+  int i, t = 0, a[26] = {0};
+  
+  string s;
+  getline(cin, s);
 
- cout<<count<<endl;
+  for (i = 0; s[i] != '\0'; i++)
+  {
+    if (s[i] >= 'a' && s[i] <= 'z')
+      a[s[i] - 97] = 1;
+  }
+  for (i = 0; i < 26; i++)
+  {
+    t += a[i];
+  }
+  cout << t;
 
+  return 0;
+}
 
- return 0;  
-} 
