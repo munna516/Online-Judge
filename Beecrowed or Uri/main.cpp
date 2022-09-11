@@ -1,6 +1,7 @@
 /***  Problem Link :::  https://www.beecrowd.com.br/judge/en/problems/view/100   ***/
 
-#include<stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
 int main()
 {
   
