@@ -1,34 +1,32 @@
-#include <iostream>
+/***  Problem Link :::  https://codeforces.com/problemset/problem/144/A  ***/
+
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int n, a, count1 = 0, count2 = 0, b;
+    int n, maxx = 0, maxxind = 0, minn = 101, minnind = 0;
     cin >> n;
-    int ary[n];
-    for (int i = 0; i < n; i++)
+    int a[n + 1];
+    for (int i = 1; i <= n; i++)
     {
-        cin >> ary[i];
-    }
-    for (int i = 1; i < n; i++)
-    {
-        if (ary[i - 1] < ary[i])
+        cin >> a[i];
+        if (a[i] > maxx)
         {
-            a = ary[i - 1];
-            ary[i - 1] = ary[i];
-            ary[i] = a;
-            count1++;
+            maxx = a[i];
+            maxxind = i;
+        }
+        if (a[i] <= minn)
+        {
+            minn = a[i];
+            minnind = i;
         }
     }
-    for (int i = n - 1; i >= 0; i--)
+    if (maxxind < minnind)
     {
-        if (ary[i - 1] < ary[i])
-        {
-            b = ary[i - 1];
-            ary[i - 1] = ary[i];
-            ary[i] = b;
-            count2++;
-        }
+        cout << (maxxind - 1) + (n - minnind);
     }
-    cout << count1 + count2 << endl;
-    return 0;
+    else
+    {
+        cout << (maxxind - 1) + (n - minnind - 1);
+    }
 }
