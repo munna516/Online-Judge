@@ -1,13 +1,17 @@
-/***  Problem Link :::  https://codeforces.com/problemset/problem/490/A  ***/
-
 #include <bits/stdc++.h>
 using namespace std;
+
+#define ll long long
+
 int main()
 {
-    int t, i = 0, programmer = 0, math = 0, physics = 0, team, p = 0, q = 0, r = 0;
-    cin >> t;
-    int ary[t];
-    while (t--)
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+
+    int n, i = 0, programmer = 0, math = 0, physics = 0, team;
+    cin >> n;
+    int ary[n];
+    for (int i = 0; i < n; i++)
     {
         cin >> ary[i];
         if (ary[i] == 1)
@@ -18,16 +22,28 @@ int main()
             physics++;
     }
     team = min(min(programmer, math), min(math, physics));
-    cout<<team<<endl;
-
-    for (int i = 0; i < t; i++)
+    cout << team << endl;
+    for (int j = 0; j < team; j++)
     {
-        if (ary[i] == 1)
-            p = i;
-        else if (ary[i] == 2)
-            q = i;
-        else if (ary[i] == 3)
-            r = i;
+        ll p = 0, q = 0, r = 0;
+        for (int i = 0; i < n; i++)
+        {
+            if (ary[i] == 1)
+            {
+                p = i + 1;
+                ary[i] = 0;
+            }
+            if (ary[i] == 2)
+            {
+                q = i + 1;
+                ary[i] = 0;
+            }
+            if (ary[i] == 3)
+            {
+                r = i + 1;
+                ary[i] = 0;
+            }
+        }
         if (p > 0 && q > 0 && r > 0)
         {
             cout << p << " " << q << " " << r << endl;
@@ -36,5 +52,6 @@ int main()
             r = 0;
         }
     }
+
     return 0;
 }
