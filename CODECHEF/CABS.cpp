@@ -7,6 +7,7 @@ int main()
  std::cin>>test;
  while(test--)
    {
+
     int a,b;
     std::cin>>a>>b;
     if(a==b)
@@ -14,7 +15,8 @@ int main()
     else if(a>b)
       std::cout<<"SECOND"<<std::endl;
     else
-      std::cout<<"FIRST"<<std::endl;    
+      std::cout<<"FIRST"<<std::endl; 
+         
    }
 
  return 0; 

@@ -3,6 +3,7 @@
 using namespace std;
 int main()
 {
+  
  int test;
  std::cin>>test;
  while(test--)
