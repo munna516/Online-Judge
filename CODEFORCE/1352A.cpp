@@ -1,4 +1,3 @@
-/*  Problem Link :::     https://codeforces.com/problemset/problem/1352/A  */
 #include <iostream>
 using namespace std;
 #define ll long long

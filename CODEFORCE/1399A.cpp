@@ -1,5 +1,3 @@
-/***  Problem Link :::  https://codeforces.com/problemset/problem/1399/A  ***/
-
 #include <bits/stdc++.h>
 #include <vector>
 using namespace std;

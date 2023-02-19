@@ -1,5 +1,3 @@
-/***  Problem Link :::  https://codeforces.com/problemset/problem/1367/A  ***/
-
 #include <bits/stdc++.h>
 #include <string>
 using namespace std;

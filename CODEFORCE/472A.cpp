@@ -1,5 +1,3 @@
-/***  Problem Link :::  https://codeforces.com/problemset/problem/472/A  ***/
-
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long

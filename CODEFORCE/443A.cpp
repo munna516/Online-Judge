@@ -1,5 +1,3 @@
-/***  Problem Link ::: https://codeforces.com/problemset/problem/443/A  ***/
-
 #include <iostream>
 using namespace std;
 int main()
