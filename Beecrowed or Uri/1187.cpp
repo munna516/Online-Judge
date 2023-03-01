@@ -5,7 +5,7 @@ int main()
     char c;
     cin >> c;
     int x = 12;
-    float ar[x][x], sum = 0;
+    double ar[x][x], sum = 0.0;
     for (int i = 0; i < x; i++)
     {
         for (int j = 0; j < x; j++)
@@ -13,16 +13,15 @@ int main()
             cin >> ar[i][j];
         }
     }
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < (x / 2) - 1; i++)
     {
-        for (int j = 0; j < x; j++)
+        for (int j = i + 1; j < x - (i + 1); j++)
         {
-            if (i > j)
-                sum += ar[i][j];
+            sum += ar[i][j];
         }
     }
     if (c == 'S')
-        cout << sum << endl;
+        cout << fixed << setprecision(1) << sum << endl;
     else
-        cout << sum / 66 << endl;
+        cout << fixed << setprecision(1) << sum / 30.0 << endl;
 }

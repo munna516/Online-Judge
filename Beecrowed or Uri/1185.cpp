@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    int a = 1;
     char c;
     cin >> c;
     int x = 12;
@@ -15,11 +16,12 @@ int main()
     }
     for (int i = 0; i < x; i++)
     {
-        for (int j = 0; j < x; j++)
+        for (int j = 0; j < x - a; j++)
         {
-            if (i > j)
-                sum += ar[i][j];
+
+            sum += ar[i][j];
         }
+        ++a;
     }
     if (c == 'S')
         cout << sum << endl;
