@@ -7,8 +7,8 @@ int main()
   while (t--)
   {
     int value;
-    cin>>value;
-    cout<<7-value<<endl;
+    cin >> value;
+    cout << 7 - value << endl;
   }
 
   return 0;

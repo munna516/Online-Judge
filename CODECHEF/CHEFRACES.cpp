@@ -1,24 +1,24 @@
-#include<iostream>
-using namespace std ;
+#include <iostream>
+using namespace std;
 
 int main()
 {
-    int t ;
-    cin >> t ;
+    int t;
+    cin >> t;
 
-    while(t--)
+    while (t--)
     {
-        int x, y, a, b ;
-        cin >> x >> y >> a >> b ;
+        int x, y, a, b;
+        cin >> x >> y >> a >> b;
 
-        int gold = 0 ;
+        int gold = 0;
 
-        if(x != a && x != b)
-            gold++ ;
-        if(y != a && y != b)
-            gold++ ;
+        if (x != a && x != b)
+            gold++;
+        if (y != a && y != b)
+            gold++;
 
-        cout << gold << endl ;
+        cout << gold << endl;
     }
 
     return 0;

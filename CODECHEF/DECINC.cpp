@@ -1,19 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
- int n;
- cin>>n;
-if(n%4==0)
+  int n;
+  cin >> n;
+  if (n % 4 == 0)
   {
     n++;
-    cout<<n<<endl;
+    cout << n << endl;
   }
-else
+  else
   {
     --n;
-    cout<<n<<endl;
+    cout << n << endl;
   }
 
- return 0; 
+  return 0;
 }
