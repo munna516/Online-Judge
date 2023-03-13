@@ -10,10 +10,10 @@ int main()
     int a;
     float b;
     cin >> a >> b;
-    
-    if ((a%5==0) && (b-a-0.5>=0))
+
+    if ((a % 5 == 0) && (b - a - 0.5 >= 0))
     {
-        cout << fixed << b-a-0.5 << endl;
+        cout << fixed << b - a - 0.5 << endl;
     }
     else
     {
