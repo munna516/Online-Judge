@@ -1,20 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
- int t;
- cin>>t;
- while(t--)
-   {
-    int a,b,c,d;
-    cin>>a>>b;
-    cin>>c>>d;
-    if(c>=a && d>=b)
-      cout<<"POSSIBLE"<<endl;
+  int t;
+  cin >> t;
+  while (t--)
+  {
+    int a, b, c, d;
+    cin >> a >> b;
+    cin >> c >> d;
+    if (c >= a && d >= b)
+      cout << "POSSIBLE" << endl;
     else
-      cout<<"IMPOSSIBLE"<<endl;  
+      cout << "IMPOSSIBLE" << endl;
+  }
 
-   }
-
- return 0; 
+  return 0;
 }

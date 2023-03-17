@@ -13,11 +13,11 @@ int main()
     for (int i = 0; i < 5; i++)
     {
       if (s1[i] == s2[i])
-          cout << "G";
-        else
-          cout << "B";
+        cout << "G";
+      else
+        cout << "B";
     }
-    cout<<endl;
+    cout << endl;
   }
 
   return 0;

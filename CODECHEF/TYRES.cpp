@@ -7,11 +7,11 @@ int main()
   while (t--)
   {
     int n;
-    cin>>n;
-    if(n%4==0)
-      cout<<"NO"<<endl;
+    cin >> n;
+    if (n % 4 == 0)
+      cout << "NO" << endl;
     else
-      cout<<"Yes"<<endl;   
+      cout << "Yes" << endl;
   }
 
   return 0;
