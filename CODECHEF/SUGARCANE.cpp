@@ -1,15 +1,15 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
- int t;
- cin>>t;
- while(t--)
-   {
+  int t;
+  cin >> t;
+  while (t--)
+  {
     int n;
-    cin>>n;
-    cout<<15*n<<endl;
-   }
+    cin >> n;
+    cout << 15 * n << endl;
+  }
 
- return 0; 
+  return 0;
 }

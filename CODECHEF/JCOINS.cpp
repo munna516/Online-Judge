@@ -1,16 +1,16 @@
-#include<iostream>
-using namespace std ;
+#include <iostream>
+using namespace std;
 int main()
 {
-    int t ;
-    cin >> t ;
+  int t;
+  cin >> t;
 
-    while(t--)
-    {
-      int x,y;
-      cin>>x>>y;
-      cout<<(x*10)+(y*5)<<endl;
-    }
+  while (t--)
+  {
+    int x, y;
+    cin >> x >> y;
+    cout << (x * 10) + (y * 5) << endl;
+  }
 
-    return 0;
+  return 0;
 }
