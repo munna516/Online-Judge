@@ -11,5 +11,5 @@ int main()
     int sz = unique(v.begin(), v.end()) - v.begin();
     cout << sz << endl;
 
-        return 0;
+    return 0;
 }
