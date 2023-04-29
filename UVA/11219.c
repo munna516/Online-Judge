@@ -5,7 +5,6 @@ int main()
     scanf("%d", &t);
     for (i = 1; i <= t; i++)
     {
-
         scanf("%d/%d/%d", &d, &m, &y);
         getchar();
         scanf("%d/%d/%d", &d1, &m1, &y1);
