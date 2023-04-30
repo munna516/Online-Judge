@@ -3,15 +3,15 @@ using namespace std;
 int main()
 {
   int t;
-  std::cin >> t;
+  cin >> t;
   while (t--)
   {
     int x;
-    std::cin >> x;
+    cin >> x;
     if (10 - x >= 3)
-      std::cout << "YES" << std::endl;
+      cout << "YES" << endl;
     else
-      std::cout << "NO" << std::endl;
+      cout << "NO" << endl;
   }
 
   return 0;
