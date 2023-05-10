@@ -3,17 +3,17 @@ using namespace std;
 int main()
 {
   int test;
-  std::cin >> test;
+  cin >> test;
   while (test--)
   {
     int w, x, z, y;
-    std::cin >> w >> x >> y >> z;
+    cin >> w >> x >> y >> z;
     if ((z * y) + w > x)
-      std::cout << "overFlow" << std::endl;
+      cout << "overFlow" << endl;
     else if ((z * y) + w == x)
-      std::cout << "filled" << std::endl;
+      cout << "filled" << endl;
     else
-      std::cout << "Unfilled" << std::endl;
+      cout << "Unfilled" << endl;
   }
 
   return 0;
