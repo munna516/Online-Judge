@@ -10,15 +10,18 @@ using namespace std;
 
 void solve()
 {
+    int n,m;
+    cin>>n>>m;
+    cout<<n+(n-1)/(m-1)<<endl;
 }
 int main()
 {
   ISO;
-  ll _;
-  cin >> _;
-  while (_--)
-  {
+//   ll _;
+//   cin >> _;
+//   while (_--)
+//   {
     solve();
-  }
+//   }
   return 0;
 }
