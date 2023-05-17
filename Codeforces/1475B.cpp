@@ -4,12 +4,19 @@ using namespace std;
 #define ll long long
 #define pi 3.1416
 #define endl "\n"
-#define yes {cout<<"YES"<<endl;}
+#define yes {cout<<"YES"<<endl; }
 #define no {cout<<"NO"<<endl;}
 /*------------------------------------------------------------------------*/
 
 void solve()
 {
+  int n;
+  cin>>n;
+  int x = n%100;
+  if(n%2020 <= n/2020)
+  yes
+  else 
+  no
 }
 int main()
 {
