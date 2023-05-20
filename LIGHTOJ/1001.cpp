@@ -13,15 +13,23 @@ using namespace std;
 
 void solve()
 {
+  int n;
+  cin >> n;
+  if (n > 10)
+    cout << "10"
+         << " " << n - 10 << endl;
+  else
+    cout << "0"
+         << " " << n << endl;
 }
 int main()
 {
   ISO;
-  // ll _;
-  // cin >> _;
-  // while (_--)
-  // {
-  solve();
-  // }
+  ll _;
+  cin >> _;
+  while (_--)
+  {
+    solve();
+  }
   return 0;
 }

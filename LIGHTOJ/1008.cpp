@@ -17,11 +17,11 @@ void solve()
 int main()
 {
   ISO;
-  // ll _;
-  // cin >> _;
-  // while (_--)
-  // {
-  solve();
-  // }
+  ll _;
+  cin >> _;
+  while (_--)
+  {
+    solve();
+  }
   return 0;
 }
