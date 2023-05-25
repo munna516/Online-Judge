@@ -4,16 +4,18 @@ using namespace std;
   ios_base::sync_with_stdio(0); \
   cin.tie(0);                   \
   cout.tie(0);
-#define ll long long
-#define pi 3.1416
-#define endl "\n"
 #define yes cout << "YES" << endl;
 #define no cout << "NO" << endl;
+#define ll long long
+#define pai 3.14159
+#define endl "\n"
+#define vi vector<int>
+#define pi pair<int, int>
 /*----------------------------------*/
-
 void solve()
 {
 }
+/*----------------------------------*/
 int main()
 {
   ISO;

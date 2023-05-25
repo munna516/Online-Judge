@@ -10,27 +10,29 @@ using namespace std;
 #define yes cout << "YES" << endl;
 #define no cout << "NO" << endl;
 /*----------------------------------*/
-
-void solve()
-{
-    int count = 0;
-    getchar();
-    string s;
-    cin >> s;
-    int x = s.length() / 2;
-    if (x % 2 == 0)
-        cout << "NET" << endl;
-    else
-        cout << "DA" << endl;
-}
 int main()
 {
-   // ISO;
+    // ISO;
     ll _;
     cin >> _;
     while (_--)
     {
-        solve();
+        string s;
+        cin >> s;
+        int count0 = 0;
+        int count1 = 0;
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (s[i] == '0')
+                count0++;
+            if (s[i] == '1')
+                count1++;
+        }
+
+        if (min(count0, count1) % 2 == 1)
+            cout << "DA" << endl;
+        else
+            cout << "NET" << endl;
     }
     return 0;
 }
