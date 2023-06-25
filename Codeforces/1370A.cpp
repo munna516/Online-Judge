@@ -11,21 +11,20 @@ const int N = 1e9 + 7;
 /****************************************/
 void solve()
 {
-    int a, b;
-    cin >> a >> b;
-    int x = 6 - (max(a, b) - 1);
-    cout << (x / __gcd(x, 6)) << "/" << (6 / __gcd(x, 6)) << endl;
+    int n;
+    cin >> n;
+    cout << n / 2 << endl;
 }
 /****************************************/
 int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    // ll _;
-    // cin >> _;
-    // while (_--)
-    // {
-    solve();
-    // }
+    ll _;
+    cin >> _;
+    while (_--)
+    {
+        solve();
+    }
     return 0;
 }
