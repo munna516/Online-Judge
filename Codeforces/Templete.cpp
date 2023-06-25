@@ -4,14 +4,15 @@ using namespace std;
 #define no cout << "NO" << endl;
 #define ll long long
 #define pai 3.14159
+const int N = 1e9 + 7;
 #define endl "\n"
 #define vi vector<int>
 #define pi pair<int, int>
-
+/****************************************/
 void solve()
 {
-    
 }
+/****************************************/
 int main()
 {
     ios_base::sync_with_stdio(0);
