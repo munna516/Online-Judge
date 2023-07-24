@@ -8,21 +8,21 @@ const int N = 1e9 + 7;
 #define endl "\n"
 #define vi vector<int>
 #define pi pair<int, int>
-void ifndef()
+/****************************************/
+void solve()
+{
+    int n;
+    cin >> n;
+    if (n % 2 == 0)
+        cout << n / 2 << endl;
+    else
+        cout << (n / 2) + 1 << endl;
+}
+/****************************************/
+int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif // ONLINE_JUDGE
-}
-void solve()
-{
-}
-int main()
-{
-    ifndef();
     ll _;
     cin >> _;
     while (_--)
