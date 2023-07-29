@@ -10,10 +10,18 @@ const int N = 1e9 + 7;
 #define pi pair<int, int>
 void solve()
 {
-    int a, b;
-    while (cin >> a >> b)
+    int a, b, c;
+    while (cin >> a >> b >> c)
     {
-        cout << 2 * a * b << endl;
+        if ((a == 1 && b == 1 && c == 0) || (a == 0 && b == 0 && c == 1))
+            cout << "C" << endl;
+        else if ((a == 1 && b == 0 && c == 1) || (a == 0 && b == 1 && c == 0))
+            cout << "B" << endl;
+        else if ((a == 1 && b == 0 && c == 0) || (a == 0 && b == 1 && c == 1))
+            cout << "A" << endl;
+        else
+            cout << "*" << endl;
+     
     }
 }
 int main()

@@ -11,20 +11,18 @@ const int N = 1e9 + 7;
 void solve()
 {
     int a, b;
-    while (cin >> a >> b)
-    {
-        cout << 2 * a * b << endl;
-    }
+    cin >> a >> b;
+    cout << a + b << endl;
 }
 int main()
 {
-    // ios_base::sync_with_stdio(0);
-    // cin.tie(0);
-    // ll _;
-    // cin >> _;
-    // while (_--)
-    // {
-    solve();
-    // }
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    ll _;
+    cin >> _;
+    while (_--)
+    {
+        solve();
+    }
     return 0;
 }
