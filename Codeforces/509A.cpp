@@ -8,7 +8,7 @@ const int N = 1e9 + 7;
 #define endl "\n"
 #define vi vector<int>
 #define pi pair<int, int>
-void FastIO()
+void ifndef()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
@@ -23,12 +23,12 @@ void solve()
 }
 int main()
 {
-    FastIO();
-    ll _;
-    cin >> _;
-    while (_--)
-    {
+    ifndef();
+    // ll _;
+    // cin >> _;
+    // while (_--)
+    // {
         solve();
-    }
+    // }
     return 0;
 }

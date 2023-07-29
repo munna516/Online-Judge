@@ -8,24 +8,24 @@ const int N = 1e9 + 7;
 #define endl "\n"
 #define vi vector<int>
 #define pi pair<int, int>
-void FastIO()
-{
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif // ONLINE_JUDGE
-}
-// Solution is here
 void solve()
 {
+    string s;
+    getline(cin, s);
+    int x = s.length() / 2;
+    for (int i = x - 1; i >= 0; i--)
+        cout << s[i];
+    for (int i = s.length() - 1; i >= x; i--)
+        cout << s[i];
+    cout << endl;
 }
 int main()
 {
-    FastIO();
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
     ll _;
     cin >> _;
+    cin.ignore();
     while (_--)
     {
         solve();

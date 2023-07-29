@@ -8,22 +8,13 @@ const int N = 1e9 + 7;
 #define endl "\n"
 #define vi vector<int>
 #define pi pair<int, int>
-void FastIO()
-{
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif // ONLINE_JUDGE
-}
-// Solution is here
 void solve()
 {
 }
 int main()
 {
-    FastIO();
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
     ll _;
     cin >> _;
     while (_--)
